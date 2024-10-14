@@ -1,4 +1,4 @@
-defmodule Spirit.BasicTypes do
+defmodule Spirit.Exercises.BasicTypes do
   @moduledoc """
   Exercises for "Basic Types"
   Guide Page: <https://hexdocs.pm/elixir/basic-types.html>
@@ -23,10 +23,10 @@ defmodule Spirit.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.BasicTypes.format_percentage(0.5)
+      iex> Spirit.Exercises.BasicTypes.format_percentage(0.5)
       iex> "50%"
 
-      iex> Spirit.BasicTypes.format_percentage(-1.236)
+      iex> Spirit.Exercises.BasicTypes.format_percentage(-1.236)
       iex> "-124%"
 
   """
@@ -38,13 +38,13 @@ defmodule Spirit.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.BasicTypes.opposites?(true, false)
+      iex> Spirit.Exercises.BasicTypes.opposites?(true, false)
       true
 
-      iex> Spirit.BasicTypes.opposites?(nil, [])
+      iex> Spirit.Exercises.BasicTypes.opposites?(nil, [])
       true
 
-      iex> Spirit.BasicTypes.opposites?(1, "hi")
+      iex> Spirit.Exercises.BasicTypes.opposites?(1, "hi")
       false
 
   """
@@ -58,25 +58,24 @@ defmodule Spirit.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.BasicTypes.boolean_opposites?(true, false)
+      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(true, false)
       true
 
-      iex> Spirit.BasicTypes.boolean_opposites?(nil, [])
+      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(nil, [])
       BadBooleanError
 
-      iex> Spirit.BasicTypes.boolean_opposites?(1, "hi")
+      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(1, "hi")
       BadBooleanError
 
   """
   def boolean_opposites?(a, b) do
   end
 
-
   @doc """
   Converts the given string to uppercase and appends an exclamation mark at the
   end.
 
-      iex> Spirit.BasicTypes.shout("hi")
+      iex> Spirit.Exercises.BasicTypes.shout("hi")
       "HI!"
 
   """

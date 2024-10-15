@@ -20,7 +20,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       3
   """
   def three_item_list() do
-    [1, 2, 3]
   end
 
   @doc """
@@ -35,7 +34,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       [1, 2, 3, true, false, nil]
   """
   def add_two_lists(list_a, list_b) do
-    list_a ++ list_b
   end
 
   @doc """
@@ -49,7 +47,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       [1, 2, 3]
   """
   def subtract_two_lists(list_a, list_b) do
-    list_a -- list_b
   end
 
   @doc """
@@ -61,7 +58,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       1
   """
   def return_list_head(list) do
-    hd(list)
   end
 
   @doc """
@@ -73,7 +69,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       [2, 3]
   """
   def return_list_tail(list) do
-    tl(list)
   end
 
   @doc """
@@ -87,7 +82,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       {:hello, "world"}
   """
   def return_two_tuple(first_elem, second_elem) do
-    {first_elem, second_elem}
   end
 
   @doc """
@@ -99,7 +93,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       3
   """
   def return_tuple_size(tuple) do
-    tuple_size(tuple)
   end
 
   @doc """
@@ -111,7 +104,6 @@ defmodule Spirit.Exercises.ListsAndTuples do
       3
   """
   def return_list_length(list) do
-    length(list)
   end
 end
 

@@ -1,6 +1,8 @@
 defmodule Spirit.Exercises.BasicTypesTest do
   use ExUnit.Case
 
+  doctest Spirit.Exercises.BasicTypes
+
   test "simple_tuple/0" do
     result = Spirit.Exercises.BasicTypes.simple_tuple()
 

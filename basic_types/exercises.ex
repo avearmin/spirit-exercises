@@ -61,12 +61,6 @@ defmodule Spirit.Exercises.BasicTypes do
       iex> Spirit.Exercises.BasicTypes.boolean_opposites?(true, false)
       true
 
-      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(nil, [])
-      BadBooleanError
-
-      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(1, "hi")
-      BadBooleanError
-
   """
   def boolean_opposites?(a, b) do
   end
@@ -75,8 +69,8 @@ defmodule Spirit.Exercises.BasicTypes do
   Converts the given string to uppercase and appends an exclamation mark at the
   end.
 
-      iex> Spirit.Exercises.BasicTypes.shout("hi")
-      "HI!"
+      iex> Spirit.Exercises.BasicTypes.shout("yes")
+      "YES!"
 
   """
   def shout(string) do

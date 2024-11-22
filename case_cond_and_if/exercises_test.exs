@@ -1,9 +1,9 @@
-defmodule Spirit.Exercises.CaseCondAndIfTest do
+defmodule Spirit.CaseCondAndIfTest do
   use ExUnit.Case
 
-  doctest Spirit.Exercises.CaseCondAndIf
+  doctest Spirit.CaseCondAndIf
 
-  alias Spirit.Exercises.CaseCondAndIf
+  alias Spirit.CaseCondAndIf
 
   describe "case, cond, and if Tests" do
     test "check_result/1" do

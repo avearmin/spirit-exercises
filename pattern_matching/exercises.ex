@@ -72,7 +72,7 @@ defmodule Spirit.Exercises.PatternMatching do
       {"x", "y", "z"}
 
   """
-  def list_to_three_tuple(tuple) do
+  def list_to_three_tuple(list) do
   end
 
   @doc """

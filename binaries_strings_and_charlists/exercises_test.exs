@@ -34,9 +34,9 @@ defmodule Spirit.BinariesStringsAndCharlistsTest do
 
     test "second_bit_is_one?/1" do
       assert not BinariesStringsAndCharlists.second_bit_is_one?("1")
-      assert_raise MatchError, fn -> BinariesStringsAndCharlists.second_bit_is_one?("") end
+      assert not BinariesStringsAndCharlists.second_bit_is_one?("")
     end
-    
+
     test "simple_charlist/0" do
       assert BinariesStringsAndCharlists.simple_charlist() == ~c"elixir"
     end
@@ -54,6 +54,5 @@ defmodule Spirit.BinariesStringsAndCharlistsTest do
       s = ""
       assert BinariesStringsAndCharlists.switch_string_and_charlist(s) == ~c""
     end
-      
   end
 end

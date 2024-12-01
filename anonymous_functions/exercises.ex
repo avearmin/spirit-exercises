@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.AnonymousFunctions do
+defmodule Spirit.AnonymousFunctions do
   @moduledoc """
   Exercises for "Anonymous functions"
   Guide Page: <https://hexdocs.pm/elixir/anonymous-functions.html>
@@ -17,7 +17,7 @@ defmodule Spirit.Exercises.AnonymousFunctions do
 
   ## Examples
 
-      iex> inc = Spirit.Exercises.AnonymousFunctions.create_incrementer(1)
+      iex> inc = Spirit.AnonymousFunctions.create_incrementer(1)
       iex> inc.(2)
       3
 
@@ -29,7 +29,7 @@ defmodule Spirit.Exercises.AnonymousFunctions do
   Returns an anonymous function that prepends `"[ERROR]"` to the given message
   string.
 
-      iex> logger = Spirit.Exercises.AnonymousFunctions.create_error_logger()
+      iex> logger = Spirit.AnonymousFunctions.create_error_logger()
       iex> logger.("invalid input")
       "[ERROR] invalid input"
 
@@ -41,7 +41,7 @@ defmodule Spirit.Exercises.AnonymousFunctions do
   Returns an anonymous function that prepends `"[SUCCESS]"` to the given
   message string.
 
-      iex> logger = Spirit.Exercises.AnonymousFunctions.create_success_logger()
+      iex> logger = Spirit.AnonymousFunctions.create_success_logger()
       iex> logger.("request sent")
       "[SUCCESS] request sent"
 
@@ -55,10 +55,10 @@ defmodule Spirit.Exercises.AnonymousFunctions do
 
   ### Examples
 
-      iex> Spirit.Exercises.AnonymousFunctions.log_result({:ok, "sent"})
+      iex> Spirit.AnonymousFunctions.log_result({:ok, "sent"})
       "[SUCCESS] sent"
 
-      iex> Spirit.Exercises.AnonymousFunctions.log_result({:error, "failed"})
+      iex> Spirit.AnonymousFunctions.log_result({:error, "failed"})
       "[ERROR] failed"
 
   """

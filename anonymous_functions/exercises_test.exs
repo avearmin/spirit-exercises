@@ -1,9 +1,9 @@
-defmodule Spirit.Exercises.AnonymousFunctionsTest do
+defmodule Spirit.AnonymousFunctionsTest do
   use ExUnit.Case
 
-  doctest Spirit.Exercises.AnonymousFunctions
+  doctest Spirit.AnonymousFunctions
 
-  alias Spirit.Exercises.AnonymousFunctions
+  alias Spirit.AnonymousFunctions
 
   describe "Anonymous functions Tests" do
     test "create_incrementer/1" do

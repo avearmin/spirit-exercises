@@ -1,9 +1,9 @@
-defmodule Spirit.Exercises.PatternMatchingTest do
+defmodule Spirit.PatternMatchingTest do
   use ExUnit.Case
 
-  doctest Spirit.Exercises.PatternMatching
+  doctest Spirit.PatternMatching
 
-  alias Spirit.Exercises.PatternMatching
+  alias Spirit.PatternMatching
 
   describe "Lists and Tuples Tests" do
     test "match_with_42/1" do

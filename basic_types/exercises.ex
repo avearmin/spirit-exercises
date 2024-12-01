@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.BasicTypes do
+defmodule Spirit.BasicTypes do
   @moduledoc """
   Exercises for "Basic Types"
   Guide Page: <https://hexdocs.pm/elixir/basic-types.html>
@@ -23,10 +23,10 @@ defmodule Spirit.Exercises.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.Exercises.BasicTypes.format_percentage(0.5)
+      iex> Spirit.BasicTypes.format_percentage(0.5)
       iex> "50%"
 
-      iex> Spirit.Exercises.BasicTypes.format_percentage(-1.236)
+      iex> Spirit.BasicTypes.format_percentage(-1.236)
       iex> "-124%"
 
   """
@@ -38,13 +38,13 @@ defmodule Spirit.Exercises.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.Exercises.BasicTypes.opposites?(true, false)
+      iex> Spirit.BasicTypes.opposites?(true, false)
       true
 
-      iex> Spirit.Exercises.BasicTypes.opposites?(nil, [])
+      iex> Spirit.BasicTypes.opposites?(nil, [])
       true
 
-      iex> Spirit.Exercises.BasicTypes.opposites?(1, "hi")
+      iex> Spirit.BasicTypes.opposites?(1, "hi")
       false
 
   """
@@ -58,7 +58,7 @@ defmodule Spirit.Exercises.BasicTypes do
 
   ## Examples
 
-      iex> Spirit.Exercises.BasicTypes.boolean_opposites?(true, false)
+      iex> Spirit.BasicTypes.boolean_opposites?(true, false)
       true
 
   """
@@ -69,7 +69,7 @@ defmodule Spirit.Exercises.BasicTypes do
   Converts the given string to uppercase and appends an exclamation mark at the
   end.
 
-      iex> Spirit.Exercises.BasicTypes.shout("yes")
+      iex> Spirit.BasicTypes.shout("yes")
       "YES!"
 
   """

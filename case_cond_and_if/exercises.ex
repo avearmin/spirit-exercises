@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.CaseCondAndIf do
+defmodule Spirit.CaseCondAndIf do
   @moduledoc """
   Exercises for "case, cond, and if"
   Guide Page: <https://hexdocs.pm/elixir/case-cond-and-if.html>
@@ -40,11 +40,11 @@ defmodule Spirit.Exercises.CaseCondAndIf do
   ## Examples
 
       iex> valid_header = "Bearer Ug+H2dqRHpE"
-      iex> Spirit.Exercises.CaseCondAndIf.extract_bearer_token(valid_header)
+      iex> Spirit.CaseCondAndIf.extract_bearer_token(valid_header)
       {:ok, "Ug+H2dqRHpE"}
 
       iex> invalid_header = "oops"
-      iex> Spirit.Exercises.CaseCondAndIf.extract_bearer_token(invalid_header)
+      iex> Spirit.CaseCondAndIf.extract_bearer_token(invalid_header)
       {:error, :invalid_header}
 
   """
@@ -58,10 +58,10 @@ defmodule Spirit.Exercises.CaseCondAndIf do
 
   ## Examples
 
-      iex> Spirit.Exercises.CaseCondAndIf.odd_or_even(42)
+      iex> Spirit.CaseCondAndIf.odd_or_even(42)
       :even
 
-      iex> Spirit.Exercises.CaseCondAndIf.odd_or_even(333)
+      iex> Spirit.CaseCondAndIf.odd_or_even(333)
       :odd
 
   """
@@ -79,16 +79,16 @@ defmodule Spirit.Exercises.CaseCondAndIf do
 
   ## Examples
 
-    iex> Spirit.Exercises.CaseCondAndIf.fizz_buzz(12)
+    iex> Spirit.CaseCondAndIf.fizz_buzz(12)
     :fizz
 
-    iex> Spirit.Exercises.CaseCondAndIf.fizz_buzz(5)
+    iex> Spirit.CaseCondAndIf.fizz_buzz(5)
     :buzz
 
-    iex> Spirit.Exercises.CaseCondAndIf.fizz_buzz(15)
+    iex> Spirit.CaseCondAndIf.fizz_buzz(15)
     :fizzbuzz
 
-    iex> Spirit.Exercises.CaseCondAndIf.fizz_buzz(16)
+    iex> Spirit.CaseCondAndIf.fizz_buzz(16)
     16
 
   """

@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.PatternMatching do
+defmodule Spirit.PatternMatching do
   @moduledoc """
   Exercises for "Pattern Matching"
   Guide Page: <https://hexdocs.pm/elixir/pattern-matching.html>
@@ -19,7 +19,7 @@ defmodule Spirit.Exercises.PatternMatching do
 
   ## Examples
 
-      iex> Spirit.Exercises.PatternMatching.match_with_42(42)
+      iex> Spirit.PatternMatching.match_with_42(42)
       42
 
   """
@@ -29,7 +29,7 @@ defmodule Spirit.Exercises.PatternMatching do
   @doc """
   Uses pattern matching to ensure two values are equal to each other.
 
-      iex> Spirit.Exercises.PatternMatching.match_values(10, 10)
+      iex> Spirit.PatternMatching.match_values(10, 10)
       10
 
   """
@@ -42,7 +42,7 @@ defmodule Spirit.Exercises.PatternMatching do
   ## Examples
 
       iex> t = {:ok, "hello"}
-      iex> Spirit.Exercises.PatternMatching.first_of_two_tuple(t)
+      iex> Spirit.PatternMatching.first_of_two_tuple(t)
       :ok
 
   """
@@ -55,7 +55,7 @@ defmodule Spirit.Exercises.PatternMatching do
   ## Examples
 
       iex> t = {:ok, "hello"}
-      iex> Spirit.Exercises.PatternMatching.get_result_value(t)
+      iex> Spirit.PatternMatching.get_result_value(t)
       "hello"
 
   """
@@ -68,7 +68,7 @@ defmodule Spirit.Exercises.PatternMatching do
   ## Examples
 
       iex> l = ["x", "y", "z"]
-      iex> Spirit.Exercises.PatternMatching.list_to_three_tuple(l)
+      iex> Spirit.PatternMatching.list_to_three_tuple(l)
       {"x", "y", "z"}
 
   """
@@ -81,7 +81,7 @@ defmodule Spirit.Exercises.PatternMatching do
   ## Examples
 
       iex> l = ["x", "y", "z"]
-      iex> Spirit.Exercises.PatternMatching.head_and_tail(l)
+      iex> Spirit.PatternMatching.head_and_tail(l)
       {"x", ["y", "z"]}
 
   """

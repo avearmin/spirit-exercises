@@ -1,9 +1,9 @@
-defmodule Spirit.Exercises.ListsAndTuplesTests do
+defmodule Spirit.ListsAndTuplesTests do
   use ExUnit.Case
 
-  doctest Spirit.Exercises.ListsAndTuples
+  doctest Spirit.ListsAndTuples
 
-  alias Spirit.Exercises.ListsAndTuples
+  alias Spirit.ListsAndTuples
 
   describe "Lists and Tuples Tests" do
     test "three_item_list/0" do

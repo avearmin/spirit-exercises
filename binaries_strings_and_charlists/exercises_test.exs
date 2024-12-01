@@ -1,9 +1,9 @@
-defmodule Spirit.Exercises.BinariesStringsAndCharlistsTest do
+defmodule Spirit.BinariesStringsAndCharlistsTest do
   use ExUnit.Case
 
-  doctest Spirit.Exercises.BinariesStringsAndCharlists
+  doctest Spirit.BinariesStringsAndCharlists
 
-  alias Spirit.Exercises.BinariesStringsAndCharlists
+  alias Spirit.BinariesStringsAndCharlists
 
   describe "Binaries, strings, and charlists Tests" do
     test "first_char/1" do

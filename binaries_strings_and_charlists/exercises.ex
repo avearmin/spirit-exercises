@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.BinariesStringsAndCharlists do
+defmodule Spirit.BinariesStringsAndCharlists do
   @moduledoc """
   Exercises for "Binaries, strings, and charlists"
   Guide Page: <https://hexdocs.pm/elixir/binaries-strings-and-charlists.html>
@@ -15,11 +15,11 @@ defmodule Spirit.Exercises.BinariesStringsAndCharlists do
   ## Examples
 
       iex> s = "ok"
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.first_char(s)
+      iex> Spirit.BinariesStringsAndCharlists.first_char(s)
       iex> "o"
 
       iex> s = ""
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.first_char(s)
+      iex> Spirit.BinariesStringsAndCharlists.first_char(s)
       iex> nil
 
   """
@@ -35,7 +35,7 @@ defmodule Spirit.Exercises.BinariesStringsAndCharlists do
   ## Examples
 
       iex> s = "hello 👋"
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.describe_string(s)
+      iex> Spirit.BinariesStringsAndCharlists.describe_string(s)
       %{n_chars: 7, byte_size: 10, first_char: "h"}
 
   """
@@ -65,11 +65,11 @@ defmodule Spirit.Exercises.BinariesStringsAndCharlists do
   ## Examples 
 
       iex> b = <<1::1, 0::1>>
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.second_bit_is_one?(b)
+      iex> Spirit.BinariesStringsAndCharlists.second_bit_is_one?(b)
       iex> false
 
       iex> b = "a"
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.second_bit_is_one?(b)
+      iex> Spirit.BinariesStringsAndCharlists.second_bit_is_one?(b)
       iex> true
 
   """
@@ -89,11 +89,11 @@ defmodule Spirit.Exercises.BinariesStringsAndCharlists do
   ## Examples
 
       iex> c = ~c"hi"
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.switch_string_and_charlist(c)
+      iex> Spirit.BinariesStringsAndCharlists.switch_string_and_charlist(c)
       iex> "hi"
 
       iex> s = "hi"
-      iex> Spirit.Exercises.BinariesStringsAndCharlists.switch_string_and_charlist(s)
+      iex> Spirit.BinariesStringsAndCharlists.switch_string_and_charlist(s)
       iex> ~c"hi"
 
   """

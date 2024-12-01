@@ -1,4 +1,4 @@
-defmodule Spirit.Exercises.ListsAndTuples do
+defmodule Spirit.ListsAndTuples do
   @moduledoc """
   Exercises for "Lists and Tuples"
   Guide Page: <https://hexdocs.pm/elixir/lists-and-tuples.html>
@@ -14,7 +14,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> list = Spirit.Exercises.ListsAndTuples.three_item_list()
+      iex> list = Spirit.ListsAndTuples.three_item_list()
       [1, 2, 3]
       iex> length(list)
       3
@@ -30,7 +30,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
       iex> list_a = [1, 2, 3]
       iex> list_b = [true, false, nil]
-      iex> Spirit.Exercises.ListsAndTuples.add_two_lists(list_a, list_b)
+      iex> Spirit.ListsAndTuples.add_two_lists(list_a, list_b)
       [1, 2, 3, true, false, nil]
   """
   def add_two_lists(list_a, list_b) do
@@ -43,7 +43,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
       iex> list_a = [1, true, 2, false, 3]
       iex> list_b = [true, false]
-      iex> Spirit.Exercises.ListsAndTuples.subtract_two_lists(list_a, list_b)
+      iex> Spirit.ListsAndTuples.subtract_two_lists(list_a, list_b)
       [1, 2, 3]
   """
   def subtract_two_lists(list_a, list_b) do
@@ -54,7 +54,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> Spirit.Exercises.ListsAndTuples.return_list_head([1, 2, 3])
+      iex> Spirit.ListsAndTuples.return_list_head([1, 2, 3])
       1
   """
   def return_list_head(list) do
@@ -65,7 +65,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> Spirit.Exercises.ListsAndTuples.return_list_tail([1, 2, 3])
+      iex> Spirit.ListsAndTuples.return_list_tail([1, 2, 3])
       [2, 3]
   """
   def return_list_tail(list) do
@@ -78,7 +78,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> Spirit.Exercises.ListsAndTuples.return_two_tuple(:hello, "world")
+      iex> Spirit.ListsAndTuples.return_two_tuple(:hello, "world")
       {:hello, "world"}
   """
   def return_two_tuple(first_elem, second_elem) do
@@ -89,7 +89,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> Spirit.Exercises.ListsAndTuples.return_tuple_size({:a, :b, :c})
+      iex> Spirit.ListsAndTuples.return_tuple_size({:a, :b, :c})
       3
   """
   def return_tuple_size(tuple) do
@@ -100,7 +100,7 @@ defmodule Spirit.Exercises.ListsAndTuples do
 
   ## Examples
 
-      iex> Spirit.Exercises.ListsAndTuples.return_list_length([1, 2, 3])
+      iex> Spirit.ListsAndTuples.return_list_length([1, 2, 3])
       3
   """
   def return_list_length(list) do

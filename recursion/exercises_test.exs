@@ -15,7 +15,7 @@ defmodule Spirit.RecursionTest do
     end
 
     test "average/3" do
-      assert Recursion.average([10, 11, 20, 35], 0, 0) == 19 
+      assert Recursion.average([10, 11, 20, 35], 0, 0) == 19.0 
     end
     
     test "reverse/2" do
@@ -37,7 +37,7 @@ defmodule Spirit.RecursionTest do
     end
 
     test "merge/3" do
-      assert Recursion.fizzbuzz([1, 4, 10], [0, 4, 9, 11], []) == [0, 1, 4, 4, 9, 10, 11]
+      assert Recursion.merge([1, 4, 10], [0, 4, 9, 11], []) == [0, 1, 4, 4, 9, 10, 11]
     end
   end
 end

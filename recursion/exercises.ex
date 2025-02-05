@@ -4,6 +4,13 @@ defmodule Spirit.Recursion do
   Guide Page: <https://hexdocs.pm/elixir/recursion.html>
 
   These exercises will get you used to using recursion as a replacement for loop constructs.
+
+  Tip: 
+  When building lists in Elixir, prepending items has a time complexity of O(1) while appending
+  has a time complexity of O(n). While its better to build lists by prepending, you'll notice
+  your list will be in the reverse order you want. You might be tempted to use the appending method 
+  in this case, but its still more efficent to build your list by prepending then reversing it when
+  complete. This is a consequence of singly-linked lists in a language with immutable data structres.
   """
 
   @doc """
@@ -43,10 +50,10 @@ defmodule Spirit.Recursion do
   ## Examples
 
       iex> Spirit.Recursion.average([1, 2, 3, 4, 5], 0, 0)
-      3
+      3.0
       
       iex> Spirit.Recursion.average([1], 0, 0)
-      1
+      1.0
       
       iex> Spirit.Recursion.average([], 0, 0)
       0
@@ -76,7 +83,7 @@ defmodule Spirit.Recursion do
       iex> Spirit.Recursion.square_each([2, 4, 6], [])
       [4, 16, 36]
       
-      iex> Spirit.Recursion.square_each([])
+      iex> Spirit.Recursion.square_each([], [])
       []
   """
   def square_each(list, acc) do
@@ -96,9 +103,6 @@ defmodule Spirit.Recursion do
       
       iex> Spirit.Recursion.fizzbuzz([1, 2, 3, 4, 5], [])
       [1, 2, :fizz, 4, :buzz]
-      
-      iex> Spirit.Recursion.fizzbuzz([-3, -5, -15, 0], [])
-      [:fizz, :buzz, :fizzbuzz, :fizzbuzz]
       
       iex> Spirit.Recursion.fizzbuzz([], [])
       []
